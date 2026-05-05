@@ -1,0 +1,255 @@
+[
+{
+  "question": "Was macht ORDER BY mit mehreren Spalten?",
+  "type": "mc",
+  "options": [
+    "Nur erste Spalte wird sortiert",
+    "Sortiert nach mehreren Kriterien",
+    "Gruppiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Sortiert nach mehreren Kriterien",
+  "explanation": "Es wird zuerst nach der ersten, dann nach der zweiten Spalte sortiert."
+},
+{
+  "question": "Welches Schlüsselwort kommt nach GROUP BY für Filter?",
+  "type": "text",
+  "answer": "HAVING",
+  "explanation": "HAVING filtert Gruppen."
+},
+{
+  "question": "Schreibe eine HAVING-Bedingung für mehr als 5 Einträge:",
+  "type": "copy",
+  "options": [
+    "HAVING COUNT(*) > 5",
+    "WHERE COUNT(*) > 5",
+    "GROUP BY COUNT > 5"
+  ],
+  "answer": "HAVING COUNT(*) > 5",
+  "explanation": "HAVING wird mit Aggregatfunktionen verwendet."
+},
+{
+  "question": "Was macht AVG(preis)?",
+  "type": "mc",
+  "options": [
+    "Zählt Preise",
+    "Berechnet Durchschnitt",
+    "Sortiert Preise",
+    "Filtert Preise"
+  ],
+  "answer": "Berechnet Durchschnitt",
+  "explanation": "AVG berechnet den Mittelwert."
+},
+{
+  "question": "Schreibe eine Durchschnittsberechnung:",
+  "type": "copy",
+  "options": [
+    "SELECT AVG(preis) FROM produkte",
+    "SELECT SUM(preis) FROM produkte",
+    "SELECT COUNT(preis) FROM produkte"
+  ],
+  "answer": "SELECT AVG(preis) FROM produkte",
+  "explanation": "AVG berechnet den Durchschnitt."
+},
+{
+  "question": "Was macht ROUND()?",
+  "type": "mc",
+  "options": [
+    "Sortiert Werte",
+    "Rundet Zahlen",
+    "Zählt Werte",
+    "Filtert Werte"
+  ],
+  "answer": "Rundet Zahlen",
+  "explanation": "ROUND rundet Zahlen auf oder ab."
+},
+{
+  "question": "Welches Schlüsselwort gibt einen Alias?",
+  "type": "text",
+  "answer": "AS",
+  "explanation": "AS benennt eine Spalte um."
+},
+{
+  "question": "Schreibe einen Alias für COUNT:",
+  "type": "copy",
+  "options": [
+    "COUNT(*) AS anzahl",
+    "COUNT(*) NAME anzahl",
+    "COUNT(*) = anzahl"
+  ],
+  "answer": "COUNT(*) AS anzahl",
+  "explanation": "AS definiert einen neuen Spaltennamen."
+},
+{
+  "question": "Was macht USING beim JOIN?",
+  "type": "mc",
+  "options": [
+    "Vergleicht Tabellen",
+    "Verbindet über gleiche Spaltennamen",
+    "Sortiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Verbindet über gleiche Spaltennamen",
+  "explanation": "USING wird verwendet, wenn beide Tabellen die gleiche Spalte haben."
+},
+{
+  "question": "Was macht NOT?",
+  "type": "mc",
+  "options": [
+    "Verneint eine Bedingung",
+    "Sortiert Daten",
+    "Gruppiert Daten",
+    "Zählt Daten"
+  ],
+  "answer": "Verneint eine Bedingung",
+  "explanation": "NOT kehrt eine Bedingung um."
+},
+{
+  "question": "Schreibe eine NOT-Bedingung:",
+  "type": "copy",
+  "options": [
+    "WHERE NOT stadt = 'Berlin'",
+    "WHERE stadt NOT Berlin",
+    "WHERE stadt != Berlin OR"
+  ],
+  "answer": "WHERE NOT stadt = 'Berlin'",
+  "explanation": "NOT negiert eine Bedingung."
+},
+{
+  "question": "Was macht SUM(preis * menge)?",
+  "type": "mc",
+  "options": [
+    "Zählt Bestellungen",
+    "Berechnet Gesamtwert",
+    "Sortiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Berechnet Gesamtwert",
+  "explanation": "Multiplikation innerhalb von SUM ergibt Gesamtumsatz."
+},
+{
+  "question": "Welche Klausel kommt zuletzt?",
+  "type": "mc",
+  "options": [
+    "WHERE",
+    "GROUP BY",
+    "ORDER BY",
+    "FROM"
+  ],
+  "answer": "ORDER BY",
+  "explanation": "ORDER BY ist der letzte Schritt."
+},
+{
+  "question": "Was passiert ohne WHERE?",
+  "type": "mc",
+  "options": [
+    "Keine Daten",
+    "Alle Daten werden angezeigt",
+    "Nur ein Datensatz",
+    "Fehler"
+  ],
+  "answer": "Alle Daten werden angezeigt",
+  "explanation": "Ohne WHERE gibt es keine Einschränkung."
+},
+{
+  "question": "Was macht COUNT(spalte)?",
+  "type": "mc",
+  "options": [
+    "Zählt alle Zeilen",
+    "Zählt nur nicht-NULL Werte",
+    "Sortiert Werte",
+    "Filtert Werte"
+  ],
+  "answer": "Zählt nur nicht-NULL Werte",
+  "explanation": "COUNT(spalte) ignoriert NULL-Werte."
+},
+{
+  "question": "Was macht ein INNER JOIN?",
+  "type": "mc",
+  "options": [
+    "Zeigt alle Daten aus beiden Tabellen",
+    "Zeigt nur übereinstimmende Daten",
+    "Zeigt nur linke Tabelle",
+    "Sortiert Daten"
+  ],
+  "answer": "Zeigt nur übereinstimmende Daten",
+  "explanation": "INNER JOIN zeigt nur Datensätze, die in beiden Tabellen vorkommen."
+},
+{
+  "question": "Was macht ein LEFT JOIN?",
+  "type": "mc",
+  "options": [
+    "Nur rechte Tabelle",
+    "Nur übereinstimmende Daten",
+    "Alle Daten links + passende rechts",
+    "Nur leere Werte"
+  ],
+  "answer": "Alle Daten links + passende rechts",
+  "explanation": "LEFT JOIN behält alle linken Datensätze, auch ohne Match."
+},
+{
+  "question": "Was passiert bei LEFT JOIN ohne passenden Eintrag?",
+  "type": "mc",
+  "options": [
+    "Zeile wird gelöscht",
+    "Fehler entsteht",
+    "NULL-Werte werden eingefügt",
+    "Zeile wird dupliziert"
+  ],
+  "answer": "NULL-Werte werden eingefügt",
+  "explanation": "Fehlende Werte werden als NULL dargestellt."
+},
+{
+  "question": "Welches Schlüsselwort prüft auf NULL?",
+  "type": "text",
+  "answer": "IS NULL",
+  "explanation": "NULL wird mit IS NULL geprüft, nicht mit =."
+},
+{
+  "question": "Warum funktioniert '= NULL' nicht?",
+  "type": "mc",
+  "options": [
+    "Syntaxfehler",
+    "NULL ist kein normaler Wert",
+    "Zu langsam",
+    "Nur bei Zahlen"
+  ],
+  "answer": "NULL ist kein normaler Wert",
+  "explanation": "NULL bedeutet 'unbekannt' und kann nicht direkt verglichen werden."
+},
+{
+  "question": "Schreibe eine NULL-Prüfung:",
+  "type": "copy",
+  "options": [
+    "WHERE spalte IS NULL",
+    "WHERE spalte = NULL",
+    "WHERE spalte == NULL"
+  ],
+  "answer": "WHERE spalte IS NULL",
+  "explanation": "IS NULL ist die korrekte Schreibweise."
+},
+{
+  "question": "Was macht IS NOT NULL?",
+  "type": "mc",
+  "options": [
+    "Filtert leere Werte",
+    "Filtert nicht-leere Werte",
+    "Sortiert Daten",
+    "Gruppiert Daten"
+  ],
+  "answer": "Filtert nicht-leere Werte",
+  "explanation": "IS NOT NULL zeigt nur vorhandene Werte."
+},
+{
+  "question": "Was ist eine Subquery?",
+  "type": "mc",
+  "options": [
+    "Eine Sortierung",
+    "Eine Abfrage in einer Abfrage",
+    "Ein JOIN",
+    "Ein Filter"
+  ],
+  "answer": "Eine Abfrage in einer Abfrage",
+  "explanation": "Subqueries sind verschachtelte Abfragen."
+}
+]
